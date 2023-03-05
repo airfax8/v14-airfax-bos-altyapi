@@ -16,7 +16,7 @@ console.log(`│ ${files.length} Toplam Komut Yüklendi!\n✥──────�
 files.forEach(f => {
 let props = require(`../komutlar/${f}`);
     
-console.log(`│ ${props.help.name} Komut Küklendi!`);
+console.log(`│ ${props.help.name} Komut Yüklendi!`);
 console.log(`✥─────────────────────────────────────────────────`)
 client.commands.set(props.help.name, props);
 props.conf.aliases.forEach(alias => {
